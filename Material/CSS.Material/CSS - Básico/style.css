@@ -2,3 +2,12 @@ body{
     font: normal 15pt Arial;
     margin-bottom: 500px;
 }
+h1#titulo{
+    color: dodgerblue;
+}
+p#principal{
+    color: red;
+}
+p.tag{
+    color: rgb(16, 173, 16);
+}
