@@ -1,13 +1,93 @@
-body{
-    font: normal 15pt Arial;
-    margin-bottom: 500px;
-}
+/* html{
+    font-size: 20px;
+} */
+
 h1#titulo{
     color: dodgerblue;
+    background-color: blueviolet;
 }
+
 p#principal{
-    color: red;
+    color: rgb(21, 255, 0);
+    /* background: url(imagens/download.jpg) no-repeat center/cover fixed;
+     Podemos usar separado ou junto vai por preferencia da equipe ou da pessoa em si. */
 }
+
+div#para{
+    background: url(imagens/download.jpg) no-repeat center/cover fixed;
+}
+
 p.tag{
     color: rgb(16, 173, 16);
+}
+
+div#cm{
+    background-color: blue;
+    width: 1cm;
+    height: 1cm;
+}
+
+div#mm{
+    background-color: rgb(255, 0, 0);
+    width: 1mm;
+    height: 1mm;
+}
+
+div#in{
+    background-color: rgb(43, 255, 0);
+    width: 1in;
+    height: 1in;
+}
+
+div#pixel{
+    background-color: rgb(251, 255, 0);
+    width: 10px;
+    height: 10px;
+}
+
+div#pt{
+    background-color: black;
+    width: 10pt;
+    height: 10pt;
+}
+
+div#pc{
+    background-color: rgb(212, 0, 255);
+    width: 1pc;
+    height: 1pc;
+}
+
+div.container{
+    /* font-size: 25px; */
+    width: 50vmin;
+    background-color: red;
+}
+
+/*
+em faz referencia ao tamanho da fonto do elemento que ele esta dentro
+rem faz referencia ao tamanho da fonto do elemento raiz ( por exemplo: body)
+*/
+
+div.inside{
+    /* font-size: 2rem; */
+    width: 50%;
+    background-color: blue;
+}
+
+div#base{
+    height: 10px;
+    background-color: red;
+}
+
+div#container2{
+    background-color: blue;
+    color: white;
+    /* margin: 10px 0px 0px 0px; */ /*margin da um distanciamento para fora*/
+    padding: 10px;
+    /* padding da um distanciamento para dentro */
+    
+}
+
+div#conteudo{
+
 }
