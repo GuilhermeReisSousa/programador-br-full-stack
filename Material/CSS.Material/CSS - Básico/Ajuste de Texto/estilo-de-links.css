@@ -1,0 +1,27 @@
+a{
+    text-decoration: none; 
+    color: #bc2035;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 2px solid #bc2035;
+} 
+
+/* a:visited{ //nao e muito usado
+    color: darkgreen;
+} */
+
+/*a:link{
+ // deixa o link visitado como padrao, deixando o css so no que nao foi visitado
+}
+*/
+
+/* a:hover{
+    background-color: #bc2035;
+    color: white;
+    transition: 0.5s;
+} */
+
+a:active{
+    background-color: #bc2035;
+    color: white;
+}

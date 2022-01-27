@@ -1,0 +1,30 @@
+/* p#estilo{
+    color: red;
+    text-indent: 1.5em;
+     text-decoration: line-through overline underline; 
+     letter-spacing: 1.2px;
+    line-height: 2;
+    word-spacing: 10px;
+    text-shadow: 2px 2px 5px black;
+    text-align: justify; 
+    
+
+        word-spacing: -10px;
+        letter-spacing: -2px; 
+        text-decoration: underline;
+        text-decoration: line-through;
+        text-decoration: overline; 
+    
+} 
+
+a{
+    text-decoration: none;
+} */
+
+p#fonte{
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-variant: small-caps;
+    font-size: 2em;
+}
