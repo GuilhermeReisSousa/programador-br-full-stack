@@ -1,7 +1,7 @@
 //Operadores Lógicos servem para saber se um valor e Verdadeiro ou Falso
 //&& e
 //|| ou
-//NEgativo
+//Negativo
 
 // var a = true;
 // var b = false;
