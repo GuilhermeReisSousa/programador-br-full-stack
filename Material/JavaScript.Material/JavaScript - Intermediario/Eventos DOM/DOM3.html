@@ -5,8 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function loader(){
+            let t = document.getElementById('titulo')
+            // t.onclick = mudarTexto;
+            t.addEventListener('click', mudarTexto)
+        }
+        function mudarTexto(){
+            this.innerHTML = 'Novo Texto'
+        }
+    </script>
 </head>
-<body>
-    <h1 onclick="">Bincar</h1>
+<body onload="loader()">
+            <h1 id="titulo">Clicar</h1>    
 </body>
 </html>
