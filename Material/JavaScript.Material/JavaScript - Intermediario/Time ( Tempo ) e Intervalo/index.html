@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 10px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+    <script>
+
+        var n = 0
+        var timer;
+
+        function atualizarText() {
+
+            let h = document.getElementsByTagName("h1")[0];
+            h.innerHTML += " " + n;
+            n++;
+        }
+
+        function mudarText() {
+            let h = document.getElementsByTagName("h1")[0]
+            h.innerHTML = "Começou: ";
+        }
+
+        function iniciar() {
+            timer = setInterval(atualizarText, 1000);
+            let h = document.getElementsByTagName("h1")[0];
+            setTimeout(mudarText, 1000)
+        }
+
+        function parar() {
+            clearTimeout(timer);
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    
+    <input onclick="iniciar()" type="submit" value="Iniciar">
+    <input onclick="parar()" type="submit" value="Parar">
+    <h1>Contagem: </h1>
+
+</body>
+
+</html>
