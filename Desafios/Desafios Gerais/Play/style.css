@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.video {
+    margin: auto;
+    width: 880px;
+    height: 495px;
+}
