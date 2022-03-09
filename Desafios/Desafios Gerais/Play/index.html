@@ -10,21 +10,28 @@
   <body>
     <main>
 
-      <!-- Titulo -->
-      <h1>Play.com</h1>
+        <!-- Titulo -->
+        <h1>Play.com</h1>
 
-      <!-- Div do video -->
-      <div class="video">
+        <!-- Div do video -->
+        <div class="video">
 
-        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/E1rZFQqzTRc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video id="video" src="video/videoplayback.mp4"></video>
 
-      </div>
+        </div>
 
-      <!-- Controles do Video -->
-      <img onclick="pausar()" src="" alt="Pausar"/>
-      <img onclick="play()" src="" alt="Play"/>
-      <img onclick="aumentar_vel()" src="" alt="Aumentar velocidade"/>
-      <img onclick="diminuir_vel()" src="" alt="Diminuir velocidade"/>
+        <!-- Controles do Video -->
+        <div class="controles">
+
+            <img  class="pausar" onclick="pausar()" src="images/pngtree-addition-subtraction-multiplication-and-division-direction-arrow-icon-playback-pause-return-png-image_7117477__1_-removebg-preview.png" alt="Pausar"/>
+
+            <img class="play" onclick="play()" src="images/pngtree-addition-subtraction-multiplication-and-division-direction-arrow-icon-playback-pause-return-png-image_7117477-removebg-preview.png" alt="Play"/>
+
+            <img class="aumeVel" onclick="aumenta_vel()" src="images/pngtree-addition-subtraction-multiplication-and-division-direction-arrow-icon-playback-pause-return-png-image_7117477__2_-removebg-preview.png" alt="Aumentar velocidade"/>
+
+            <img id="dimiVel" onclick="diminuri_vel()" src="images/pngtree-addition-subtraction-multiplication-and-division-direction-arrow-icon-playback-pause-return-png-image_7117477__3_-removebg-preview.png" alt="Diminuir Velocidade "/>
+
+        </div>
 
     </main>
     <!-- JavaScript -->
