@@ -10,7 +10,46 @@ body {
 
 }
 
-main.container {
+nav {
+    height: 48px;
+}
+
+.container-nav {
+    float: right;
+    padding-left: 32px;
+    padding-right: 4px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.gmail {
+    margin-right: 10px;
+}
+
+.imagens {
+    margin-right: 32px;
+}
+
+.apps {
+    margin-right: 10px;
+}
+
+.perfil {
+    margin: 0px 10px 0px 0px;
+}
+
+main.container-main {
     text-align: center;
     margin: auto;
     display: flex;
