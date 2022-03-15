@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+div {
+    width: calc(100% - 100px);
+    height: 150px;
+    background-color: goldenrod;
+    margin: auto;
+}

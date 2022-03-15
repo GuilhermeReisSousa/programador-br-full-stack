@@ -1,0 +1,24 @@
+body {
+    margin: 120px;
+}
+
+img {
+    width: 300px;
+    transform: scale(1, 0.5);
+}
+#dois {
+    width: 300px;
+    transform: rotate(-45deg);
+}
+
+#tres {
+    width: 100px;
+    transform: skew(-40deg);
+}
+
+div {
+    width: 500px;
+    height: 500px;
+    transform: rotate(50deg) skew(20deg) scale(0.5);
+    background-color: chartreuse;
+}
