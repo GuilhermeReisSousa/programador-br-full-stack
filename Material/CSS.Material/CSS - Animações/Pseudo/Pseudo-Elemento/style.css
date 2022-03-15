@@ -1,0 +1,29 @@
+p::first-line {
+  color: burlywood;
+}
+
+h1::first-letter {
+  color: chartreuse;
+}
+
+li {
+    margin: 10px;
+    list-style: none;
+}
+
+li::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../../../../Imagens/imagem-generica.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+p::selection {
+    background-color: rgba(0, 217, 255, 0.651);
+    color: rgb(30, 255, 0);
+}
+
