@@ -1,0 +1,28 @@
+.container {
+  color: white;
+  display: grid;
+  padding: 10px;
+  background-color: gray;
+
+  grid-template: 100px 100px / auto auto auto;
+  grid-gap: 5px;
+
+  justify-items: stretch;
+}
+
+.r1 {
+  background-color: red;
+}
+
+.r2 {
+  background-color: blue;
+}
+
+.r3 {
+  background-color: green;
+}
+
+.react {
+  width: 80px;
+  height: 80px;
+}

@@ -1,0 +1,26 @@
+.container {
+  color: white;
+  display: grid;
+  padding: 5px;
+  background-color: gray;
+
+  /* grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr; */
+
+  grid-template: auto auto / 2fr 3fr 1fr;
+}
+
+.r1 {
+  background-color: red;
+}
+
+.r2 {
+  background-color: blue;
+}
+
+.r3 {
+  background-color: green;
+}
+
+.react {
+}
