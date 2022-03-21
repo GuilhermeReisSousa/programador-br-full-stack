@@ -1,14 +1,14 @@
-.conteiner {
-  color: white;
+.container {
   display: grid;
+  color: white;
   background-color: gray;
-
+  
   padding: 10px;
 
   grid-template-areas:
     "a2 a2 a2 a2 a2 a2"
     "a1 a1 a3 a3 a3 a3"
-    "a4 a4 a4 a5 a5 a5"
+    "a5 a5 a4 a4 a4 a4"
     "a6 a6 a6 a6 a6 a6";
 }
 
