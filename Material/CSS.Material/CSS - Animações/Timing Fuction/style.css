@@ -1,0 +1,40 @@
+@keyframes mover {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: 650px;
+  }
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  animation-name: mover;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+.div1 {
+animation-timing-function: linear;
+}
+
+.div2 {
+   animation-timing-function: ease; 
+}
+
+.div3 {
+    animation-timing-function: ease-in;
+}
+
+.div4 {
+    animation-timing-function: ease-out;
+}
+
+.div5 {
+    animation-timing-function: ease-in-out;
+}
+

@@ -1,0 +1,27 @@
+@keyframes TrocarCor {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: blueviolet;
+  }
+}
+
+.box {
+  border: 3px solid black;
+  width: 200px;
+  height: 200px;
+}
+.box:hover {
+  animation-name: TrocarCor;
+  animation-duration: 5s;
+}
