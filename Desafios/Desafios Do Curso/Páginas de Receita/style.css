@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* Fonte principal: "Lato", Arial */
+/* Cor das fontes: #ff6b28 */
+/* Cor da top bar e da footer: #ff6b28 */
+
+/* Resetando a página */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", Arial;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Centralizando o logo */
+.topBar {
+    text-align: center;
+    background-color: #ff6b28;
+    padding: 15px;
+}
+
+/* Configurando a div da img principal */
+.boloDeLaranja {
+    height: 400px;
+    background-image: url(./img/hero_bolo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Começando a arrumar o conteudo principal*/
+main{
+margin: auto;
+max-width: 990px;
+padding: 0 40px;
+margin-top: 100px;
+}
+
+h1, h2{
+    color: #ff6b28;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.card {
+    padding: 70px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.card:hover {
+    box-shadow: 8px 8px 15px 12px rgba(163, 162, 162, 0.25);
+}
+.ingrediente{ 
+    cursor: url("./img/cursor_ingredientes.png"), auto;
+}
+
+.preparo {
+    cursor: url("./img/cursor_preparo.png"), auto;
+}
+
+button {
+    border: none;
+    padding: 15px;
+    background-color: #ff6b28;
+    border-radius: 18px;
+    margin-top: 25px;
+    color: white;
+    font-size: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.lista-ingredientes {
+    margin-bottom: 100px;
+}
+
+.intrucoes {
+    cursor: url("./img/cursor_intrucoes.png"), auto;
+}
+
+p, li {
+    line-height: 28px;
+}
+
+footer {
+    background-color: #ff6b28;
+    padding: 10px;
+}
+
+.rodape {
+    line-height: normal;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.rodape a {
+    color: white;
+}

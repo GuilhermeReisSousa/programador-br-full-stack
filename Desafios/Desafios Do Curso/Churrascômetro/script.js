@@ -1,50 +1,47 @@
-//Carne - 400g pro pessoa + de 6 horas - 650
-//Cerveja - 1200ml por pessoa + de  6 horas - 2000 ml
-//Refrigerente / água - 1000 ml pro pessoas + de 6 horas 1500 ml
+//** Carne - 400g por pessoas ++ de 6 horas 650g
+//** Cerveja - 1200 ml por pessoas ++ 6 horas - 2000ml (2 litros)
+//** Refrigerante/agua - 1000 ml (1 litro) por pessoa ++ 6 horas 1500ml (1,5 litros)
+//! criança valem por 0,5
 
-// crianças valem por 0,5
-
-var inputAdultos = document.getElementById("adultos");
-var inputCriancas = document.getElementById("criancas");
-var inputDuracao = document.getElementById("duracao");
-
-var res = document.getElementById("res");
+let inputAdultos = document.getElementById("adultos");
+let inputCriancas = document.getElementById("criancas");
+let inputDuracao = document.getElementById("duracao");
+let resultado = document.getElementById("resultado");
 
 function calcular() {
+  let adultos = inputAdultos.value;
+  let criacncas = inputCriancas.value;
+  let duracao = inputDuracao.value;
 
-    let criancas = inputCriancas.value;
-    let adultos = inputAdultos.value;
-    let duracao = inputDuracao.value
+  let qtdcarnePP = carnePP(duracao) * adultos + (carnePP(duracao) / 2) * criacncas;
+  let qtdcervejaPP = cervejaPP(duracao) * adultos;
+  let qtdbebidaPP = bebidaPP(duracao) * adultos + (bebidaPP(duracao) / 2) * criacncas;
 
-    let carneTotal = carnePP(duracao) * adultos + (carnePP(duracao) / 2 * criancas);
-    let cervejaTotal = cervejaPP(duracao) * adultos;
-    let bebidasTotal = bebidasPP(duracao) * adultos + (bebidasPP(duracao) / 2 * criancas);
-
-    res.innerHTML = `<p>${carneTotal / 1000} K.g de Carne<p>`
-    res.innerHTML += `<p>${Math.ceil(cervejaTotal / 355)} Latas de Cerveja<p>`
-    res.innerHTML += `<p>${bebidasTotal / 2000} Litros de Bebidas<p>`
+  resultado.innerHTML = `<p>${qtdcarnePP / 1000}Kg de Carne</p>`
+  resultado.innerHTML += `<p>${Math.ceil(qtdcervejaPP / 355)} Latas de Cerveja</p>`
+  resultado.innerHTML += `<p>${qtdbebidaPP / 1000} Litros de Bebibas</p>`
 }
 
 function carnePP(duracao) {
-    if(duracao >= 6){
-        return 650;
-    }else {
-        return 400;
-    }
+  if (duracao >= 6) {
+    return 650;
+  } else {
+    return 400;
+  }
 }
 
 function cervejaPP(duracao) {
-    if(duracao >= 6){
-        return 2000;
-    }else{
-        return 1200;
-    }
+  if (duracao >= 6) {
+    return 2000;
+  } else {
+    return 1200;
+  }
 }
 
-function bebidasPP(duracao) {
-    if(duracao >= 6){
-        return 1500;
-    }else{
-        return 1000;
-    }
+function bebidaPP(duracao) {
+  if (duracao >= 6) {
+    return 1500;
+  } else {
+    return 1000;
+  }
 }
