@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selecinado Irmãos</title>
+  </head>
+  <body>
+    <h1>Selecinado Irmãos.</h1>
+    <ul>
+      <li class="div1">div 1</li>
+      <li class="div2">div 2</li>
+      <li class="div3">div 3</li>
+      <li class="div4">div 4</li>
+      <li class="div5">div 5</li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script>
+      let s = $(".div3").next().nextAll().prev().prevAll().prevUntil(); //existe todos esse e mais, esse são os mais faceis e mais usados
+      console.log(s);
+    </script>
+  </body>
+</html>
