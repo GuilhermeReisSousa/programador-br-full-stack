@@ -1,0 +1,1 @@
+Aqui esta um arquivo criado com um require do node.js - Agora atualizamos com appendeFile
