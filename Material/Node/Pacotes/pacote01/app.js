@@ -5,7 +5,7 @@ let width = Number(process.argv[3]);
 function resize(path, width) {
   sharp(path)
     .resize({ width: width })
-    .toFile("../riseze/imagem.jpg", (err) => {
+    .toFile("./imagem.jpg", (err) => {
       if (err) {
         console.log(err);
       } else {
