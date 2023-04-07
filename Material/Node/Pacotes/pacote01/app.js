@@ -4,7 +4,7 @@ let width = Number(process.argv[3]);
 function resize(width, path) {}
 sharp(path)
   .resize({ width: width })
-  .toFile("./New_Image.jpg", (err) => {
+  .toFile("../new images/New_Image.jpg", (err) => {
     if (err) throw err;
     console.log("Sucesso!");
   });
