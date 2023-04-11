@@ -38,6 +38,7 @@ function compress(pathInput, outputPath) {
       console.log(completed);
       console.log(statistic);
       console.log("-------------");
+
       fs.unlink(pathInput, (err) => {
         if (err) {
           console.log("erro:", err);
@@ -49,5 +50,4 @@ function compress(pathInput, outputPath) {
   );
 }
 
-fs.unlink(path);
 resize(path, "./temp/output_resize.jpg", width);
