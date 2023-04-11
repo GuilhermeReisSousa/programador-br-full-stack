@@ -3,12 +3,12 @@ const compress_images = require("compress-images");
 let path = process.argv[2];
 let width = Number(process.argv[3]);
 
-function resize(width, inputPath, outputPath) {
+function resize(inputPath, outputPath, width) {
   sharp(inputPath)
     .resize({ width: width })
     .toFile(outputPath, (err) => {
       if (err) {
-        throw err;
+        console.log(err);
       } else {
         console.log("Sucesso!");
         compress(outputPath, "./compressed/");
@@ -38,4 +38,4 @@ function compress(pathInput, outputPath) {
   );
 }
 
-resize(path, "./new-imagems/New_image.jpg", width);
+resize(path, width);
