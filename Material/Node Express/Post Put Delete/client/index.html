@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-r">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client</title>
+  </head>
+  <body>
+    <h1>Client Server</h1>
+
+    <script>
+      fetch("http://localhost:3000/", { method: "post" })
+        .then((res) => {
+          return res.text();
+        })
+        .then((html) => {
+          return console.log(html);
+        });
+      fetch("http://localhost:3000/", { method: "put" })
+        .then((res) => {
+          return res.text();
+        })
+        .then((html) => {
+          return console.log(html);
+        });
+      fetch("http://localhost:3000/", { method: "delete" })
+        .then((res) => {
+          return res.text();
+        })
+        .then((html) => {
+          return console.log(html);
+        });
+    </script>
+  </body>
+</html>
