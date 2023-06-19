@@ -13,9 +13,9 @@ const personSchema = mongoose.Schema({
 const Person = mongoose.model("Person", personSchema);
 
 let person = new Person({
-  title: "Esse campo e obrigatorio",
+  title: "buscandoDoc",
   description: "",
-  url: "www.youtube.com/amenic",
+  url: "www.google.com",
 });
 
 person
