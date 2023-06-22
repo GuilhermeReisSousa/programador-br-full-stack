@@ -15,7 +15,7 @@ const addLink = async (req, res) => {
   let link = new Link(req.body)
   try {
     let doc = await link.save()
-    res.send(console.log(doc))
+    res.send(console.log("Post enviado"))
   } catch (error) {
     res.send(error)
   }
